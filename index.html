@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhumika Chanchlani - Portfolio</title>
-    <meta name="description" content="Portfolio of Bhumika Chanchlani, a Full Stack Developer and ECE undergrad at MSIT.">
+    <meta name="description"
+        content="Portfolio of Bhumika Chanchlani, a Full Stack Developer and ECE undergrad at MSIT.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <!-- Particle Background -->
+    <canvas id="particle-canvas"></canvas>
+
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="logo">Bhumika<span>.</span></div>
@@ -33,7 +39,8 @@
             <h1 class="title">Bhumika Chanchlani</h1>
             <h2 class="role">Full Stack Developer</h2>
             <p class="description">
-                Building robust, scalable web applications with a passion for back-end engineering and interactive user experiences.
+                Building robust, scalable web applications with a passion for back-end engineering and interactive user
+                experiences.
             </p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -41,8 +48,7 @@
             </div>
         </div>
         <div class="hero-background">
-            <div class="glow glow-1"></div>
-            <div class="glow glow-2"></div>
+            <div class="glass-overlay"></div>
         </div>
     </section>
 
@@ -53,13 +59,16 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        I am currently studying in my <strong>2nd year of B.Tech</strong> in <strong>Electronics and Communication Engineering</strong> at <strong>Maharaja Surajmal Institute of Technology (MSIT)</strong>. 
+                        I am currently pursuing a <strong>Bachelor's of Technology</strong> from <strong>Maharaja Surajmal Institute of Technology (MSIT)</strong> with an <strong>8.61 CGPA</strong>.
                     </p>
                     <p>
-                        With a strong academic foundation reflected by my <strong>CGPA of 8.61</strong> across 3 semesters, I have developed a deep passion for software development. I specialize in building complete full-stack web applications, from designing seamless user interfaces to architecting robust server-side infrastructures.
+                        With a strong academic foundation, I have developed a deep passion for software development. I specialize in building
+                        complete full-stack web applications, from designing seamless user interfaces to architecting
+                        robust server-side infrastructures.
                     </p>
                     <p>
-                        I am actively seeking internship opportunities where I can contribute my technical skills, learn from experienced professionals, and tackle real-world engineering challenges.
+                        I am actively seeking internship opportunities where I can contribute my technical skills, learn
+                        from experienced professionals, and tackle real-world engineering challenges.
                     </p>
                 </div>
                 <div class="about-stats">
@@ -68,8 +77,8 @@
                         <div class="stat-text">CGPA</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">2nd</div>
-                        <div class="stat-text">Year B.Tech</div>
+                        <div class="stat-number">10+</div>
+                        <div class="stat-text">Tech Skills</div>
                     </div>
                 </div>
             </div>
@@ -80,36 +89,33 @@
     <section id="skills" class="skills section">
         <div class="container">
             <h2 class="section-title">My Tech Stack</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">JavaScript</span>
+            <div class="bag-scene">
+                <div class="bag">
+                    <div class="bag-handle"></div>
+                    <div class="bag-back">
+                        <div class="bag-interior">
+                            <div class="skill-item"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+                            <div class="skill-item"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+                            <div class="skill-item"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+                            <div class="skill-item"><i class="fa-brands fa-node-js"></i><span>Node.js</span></div>
+                            <div class="skill-item"><i class="fa-solid fa-server"></i><span>Express.js</span></div>
+                            <div class="skill-item"><i class="fa-solid fa-network-wired"></i><span>Socket.io</span></div>
+                            <div class="skill-item"><i class="fa-solid fa-database"></i><span>PostgreSQL</span></div>
+                            <div class="skill-item"><i class="fa-solid fa-cube"></i><span>Prisma</span></div>
+                            <div class="skill-item"><i class="fa-solid fa-key"></i><span>JWT Auth</span></div>
+                            <div class="skill-item"><i class="fa-solid fa-file-arrow-up"></i><span>Multer</span></div>
+                            <div class="skill-item"><i class="fa-solid fa-cloud"></i><span>Cloudinary</span></div>
+                        </div>
                     </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Express.js</span>
-                        <span class="skill-tag">Socket.io</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Database & ORM</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">Prisma</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Auth</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">JWT Auth</span>
-                        <span class="skill-tag">Multer</span>
-                        <span class="skill-tag">Cloudinary</span>
+
+                    <div class="bag-front">
+                        <div class="bag-front-content">
+                            <h3 class="bag-label">Tech Stack & Languages</h3>
+                        </div>
+                        <div class="bag-zipper">
+                            <div class="zipper-open"></div>
+                            <div class="zipper-pull"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -121,13 +127,24 @@
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
-                
+
                 <!-- Project 1 -->
-                <div class="project-card">
+                <div class="project-card glass-card">
+                    <div class="project-image-wrapper">
+                        <img src="p1.png"
+                            alt="Throwit Project" class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://file-sharer-ye4n.onrender.com" target="_blank" class="overlay-link"><i
+                                    class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
                     <div class="project-info">
                         <h3 class="project-title">Throwit</h3>
                         <p class="project-desc">
-                            A seamless file sharing application that simplifies the way users share data. By simply entering a secret key, users join a unified room where they can instantly share documents, images, videos, and audio files. It also features a real-time chat functionality for effective collaboration.
+                            A seamless file sharing application that simplifies the way users share data. By simply
+                            entering a secret key, users join a unified room where they can instantly share documents,
+                            images, videos, and audio files. It also features a real-time chat functionality for
+                            effective collaboration.
                         </p>
                         <div class="project-tech">
                             <span>Node.js</span>
@@ -136,18 +153,30 @@
                             <span>Multer</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://file-sharer-ye4n.onrender.com" target="_blank" class="btn btn-sm btn-primary">Live Demo <i class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/bhumika019579/file_sharer.git" target="_blank" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://file-sharer-ye4n.onrender.com" target="_blank"
+                                class="btn btn-sm btn-primary">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/bhumika019579/file_sharer.git" target="_blank"
+                                class="btn btn-sm btn-outline"><i class="fab fa-github"></i> Code</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="project-card">
+                <div class="project-card glass-card">
+                    <div class="project-image-wrapper">
+                        <img src="p2.png"
+                            alt="URL Shortener Project" class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://urlshortner-production-8cb0.up.railway.app" target="_blank"
+                                class="overlay-link"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
                     <div class="project-info">
                         <h3 class="project-title">URL Shortener</h3>
                         <p class="project-desc">
-                            A robust utility designed to convert long, cumbersome URLs into concise, manageable short IDs. Visiting the generated short ID effortlessly redirects users to the original destination, making link sharing clean and trackable.
+                            A robust utility designed to convert long, cumbersome URLs into concise, manageable short
+                            IDs. Visiting the generated short ID effortlessly redirects users to the original
+                            destination, making link sharing clean and trackable.
                         </p>
                         <div class="project-tech">
                             <span>Node.js</span>
@@ -155,8 +184,10 @@
                             <span>Database</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://urlshortner-production-8cb0.up.railway.app" target="_blank" class="btn btn-sm btn-primary">Live Demo <i class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/bhumika019579/url_shortner.git" target="_blank" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://urlshortner-production-8cb0.up.railway.app" target="_blank"
+                                class="btn btn-sm btn-primary">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/bhumika019579/url_shortner.git" target="_blank"
+                                class="btn btn-sm btn-outline"><i class="fab fa-github"></i> Code</a>
                         </div>
                     </div>
                 </div>
@@ -170,7 +201,8 @@
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
             <p class="contact-text">
-                I'm currently looking for internship opportunities. Whether you have a question or just want to say hi, my inbox is always open!
+                I'm currently looking for internship opportunities. Whether you have a question or just want to say hi,
+                my inbox is always open!
             </p>
             <div class="contact-info">
                 <a href="mailto:bhumikachanchlani014@gmail.com" class="contact-card">
@@ -197,4 +229,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
