@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhumika Chanchlani - Portfolio</title>
     <meta name="description"
-        content="Portfolio of Bhumika Chanchlani, a Full Stack Developer and ECE undergrad at MSIT.">
+        content="Portfolio of Bhumika Chanchlani, a go backend Developer and ECE undergrad at MSIT.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -142,9 +142,11 @@
                     <div class="project-info">
                         <h3 class="project-title">Probe</h3>
                         <p class="project-desc">
-                            A Go-based command-line tool that scans codebases for evidence of security controls,
-                            detects implementation signals, and generates structured reports to support
-                            compliance-oriented reviews.
+                            A Go CLI evidence collector for SOC 2 reviews. It scans a codebase with eight detectors
+                             (authentication, access control, secrets, CI/CD, testing, dependencies, security docs, and hardening) 
+                             across Go, JS/TS, Python, and Java. Each finding is mapped to a SOC 2 control and reported as found,
+                              partial, or gap, with the file, line, and a confidence level. Output goes to the terminal and to JSON.
+                              It collects evidence from source code; it is not a vulnerability scanner or a compliance guarantee.
                         </p>
                         <div class="project-tech">
                             <span>Go</span>
@@ -173,9 +175,10 @@
                     <div class="project-info">
                         <h3 class="project-title">Vouch</h3>
                         <p class="project-desc">
-                           A developer discovery platform featuring GitHub authentication, developer profiles,
-                           repository showcases, and social interactions, powered by a Go backend and
-                            PostgreSQL database.
+                           A developer discovery platform that turns GitHub profiles and public repos into shareable portfolios,
+                            with posts, likes, comments, and discovery by programming language. Built with a Go/Gin REST API on 
+                            PostgreSQL via GORM, GitHub OAuth for login, and Groq-powered AI features. The React frontend is 
+                            deployed on Vercel.
                         </p>
                         <div class="project-tech">
                             <span>Go</span>
